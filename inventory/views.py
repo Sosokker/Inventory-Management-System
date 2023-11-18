@@ -1,6 +1,8 @@
 from typing import Any
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from django_filters.views import FilterView
+from inventory.filters import WarehouseFilter
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 
@@ -25,8 +27,10 @@ class OverviewView(TemplateView, LoginRequiredMixin):
         return context
     
 
-class WarehouseView(TemplateView, LoginRequiredMixin):
+class WarehouseView(FilterView, LoginRequiredMixin):
+    model = Warehouse
     template_name = "inventory/warehouse.html"
+    filterset_class = WarehouseFilter
 
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
