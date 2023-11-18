@@ -1,6 +1,6 @@
 from django.urls import path, include
-from inventory.views import test
+from inventory.views import OverviewView
 
 urlpatterns = [
-    path('overview/', test, name='overview'),
+    path('overview/', OverviewView.as_view(), name='overview'),
 ]

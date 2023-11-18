@@ -13,6 +13,16 @@ class Warehouse(models.Model):
     address = models.TextField()
     have_freeze = models.BooleanField()
 
+    @property
+    def stock_percentage(self) -> float:
+        inventories = Inventory.objects.filter(warehouse=self)
+        total_stock = 0
+        total_max_stock = 0
+        for inventory in inventories:
+            total_stock += inventory.current_stock
+            total_max_stock += inventory.max_stock
+        return total_stock / total_max_stock * 100
+
     def __str__(self):
         return f"{self.name}"
 
@@ -31,7 +41,7 @@ class Inventory(models.Model):
     current_stock = models.IntegerField()
 
     @property
-    def stock_percentage(self):
+    def stock_percentage(self) -> float:
         return self.current_stock / self.max_stock * 100
 
     def __str__(self):

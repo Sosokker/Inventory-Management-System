@@ -1,3 +1,5 @@
+import datetime
+
 from django.db import models
 
 from inventory.models import Warehouse, Item
@@ -27,7 +29,11 @@ class Supply(models.Model):
     supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     quantity = models.IntegerField()
-    arrive_date = models.DateField()
+    arrive_date = models.DateTimeField()
+
+    def pending_status(self) -> bool:
+        now = datetime.datetime.now()
+        return self.arrive_date > now.date() 
 
     def __str__(self):
         return f"{self.supplier.name} - {self.item.name} - {self.quantity}"
@@ -60,7 +66,7 @@ class Order(models.Model):
     """
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
-    order_date = models.DateField()
+    order_date = models.DateTimeField()
     quantity = models.IntegerField()
 
     def __str__(self):
