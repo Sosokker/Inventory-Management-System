@@ -1,3 +1,4 @@
+from typing import Any
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -21,4 +22,13 @@ class OverviewView(TemplateView, LoginRequiredMixin):
         context['customer_count'] = Customer.objects.count()
         context['stock_percentage'] = stock_percentage_all()
         context['pending_supply'] = count_pending_supply()
+        return context
+    
+
+class WarehouseView(TemplateView, LoginRequiredMixin):
+    template_name = "inventory/warehouse.html"
+
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context['warehouse_list'] = Warehouse.objects.all()
         return context

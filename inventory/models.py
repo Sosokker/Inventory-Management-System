@@ -23,6 +23,10 @@ class Warehouse(models.Model):
             total_max_stock += inventory.max_stock
         return total_stock / total_max_stock * 100
 
+    @property
+    def inventory_count(self) -> int:
+        return Inventory.objects.filter(warehouse=self).count()
+
     def __str__(self):
         return f"{self.name}"
 
