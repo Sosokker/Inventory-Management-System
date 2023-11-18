@@ -7,8 +7,8 @@ class WarehouseAdmin(admin.ModelAdmin):
 
 @admin.register(Inventory)
 class InventoryAdmin(admin.ModelAdmin):
-    list_display = ('warehouse', 'max_stock', 'min_stock', 'current_stock')
+    list_display = ('stock_identifier', 'warehouse', 'max_stock', 'min_stock', 'current_stock')
 
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
-    list_display = ('inventory', 'name', 'description', 'category', 'weight', 'quantity')
+    list_display = ('name', 'description', 'category', 'weight', 'quantity', 'inventory')

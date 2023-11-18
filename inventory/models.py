@@ -37,12 +37,16 @@ class Inventory(models.Model):
     """
     warehouse = models.ForeignKey(Warehouse, on_delete=models.CASCADE)
     max_stock = models.IntegerField()
-    min_stock = models.IntegerField()
-    current_stock = models.IntegerField()
+    min_stock = models.IntegerField(default=0)
+    current_stock = models.IntegerField(default=0)
 
     @property
     def stock_percentage(self) -> float:
         return self.current_stock / self.max_stock * 100
+
+    @property
+    def stock_identifier(self) -> str:
+        return f"#{self.id} {self.warehouse.name}"
 
     def __str__(self):
         return f"{self.warehouse.name} - {self.stock_percentage}%"
