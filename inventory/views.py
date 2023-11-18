@@ -47,7 +47,8 @@ class WarehouseDetailView(FilterView, LoginRequiredMixin):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['warehouse_id'] = self.kwargs.get('id')
-        context['inventory_list'] = Inventory.objects.all()
+        context['warehouse_name'] = Warehouse.objects.get(id=self.kwargs.get('id')).name
+        context['inventory_list'] = Inventory.objects.filter(warehouse__id=self.kwargs.get('id'))
         return context
 
 
@@ -56,5 +57,8 @@ class InventoryView(TemplateView, LoginRequiredMixin):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['warehouse_list'] = Warehouse.objects.all()
+        inventory = Inventory.objects.get(id=self.kwargs.get('iid'))
+        context['item_list'] = inventory.item_set.all()
+        context['inventory_name'] = inventory.stock_identifier
+        context['warehouse_name'] = inventory.warehouse.name
         return context

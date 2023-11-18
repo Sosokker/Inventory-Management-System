@@ -20,13 +20,38 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Warehouse Tables</h1>
-                        <p class="mb-4">Warehouse Table</p>
+                    <h1 class="h3 mb-2 text-gray-800">Inventory : {{ inventory_name }}</h1>
+                        <p class="mb-4">Warehouse: {{ warehouse_name }}</p>
+                        <!-- Filter -->
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Accordion -->
+                            <a class="d-block card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Filter</h6>
+                            </a>
+                            <!-- Card Content - Collapse -->
+                            <form method="get">
+                                <div class="row g-3 align-items-center mx-2 my-4">
+                                        {{ filter.form.as_p }}
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary">Filter</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href={{ request.path }} class="btn btn-danger">
+                                            <i class="fas fa-trash"></i> Clear Filter
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        
+
+                        <!-- End Filter -->
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Warehouse</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Items</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -34,31 +59,43 @@
                                     <thead>
                                         <tr>
                                             <th>Name</th>
-                                            <th>Address</th>
-                                            <th>Stock Level</th>
-                                            <th>Number of Inventory</th>
-                                            <th>Have Freezer</th>
+                                            <th>Description</th>
+                                            <th>Quantity</th>
+                                            <th>Weight</th>
+                                            <th>Category</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Name</th>
-                                            <th>Address</th>
-                                            <th>Stock Level</th>
-                                            <th>Number of Inventory</th>
-                                            <th>Have Freezer</th>
+                                            <th>Description</th>
+                                            <th>Quantity</th>
+                                            <th>Weight</th>
+                                            <th>Category</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        {% for warehouse in warehouse_list %}
-                                        <tr>
-                                            <td>{{ warehouse.name }}</td>
-                                            <td>{{ warehouse.address }}</td>
-                                            <td>{{ warehouse.stock_percentage|floatformat:3 }}</td>
-                                            <td>{{ warehouse.inventory_count }}</td>
-                                            <td>{{ warehouse.have_freeze }}</td>
-                                        </tr>
-                                        {% endfor %}
+                                        {% if filter.is_bound %}
+                                            {% for item in filter.qs %}
+                                            <tr>
+                                                <td>{{ item.name }}</td>
+                                                <td>{{ item.description }}</td>
+                                                <td>{{ item.quantity }}</td>
+                                                <td>{{ item.weight }}</td>
+                                                <td>{{ item.category }}</td>
+                                            </tr>
+                                            {% endfor %}
+                                        {% else %}
+                                            {% for item in item_list %}
+                                            <tr>
+                                                <td>{{ item.name }}</td>
+                                                <td>{{ item.description }}</td>
+                                                <td>{{ item.quantity }}</td>
+                                                <td>{{ item.weight }}</td>
+                                                <td>{{ item.category }}</td>
+                                            </tr>
+                                            {% endfor %}
+                                        {% endif %}
                                     </tbody>
                                 </table>
                             </div>
