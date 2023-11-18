@@ -14,3 +14,7 @@ on customer and supplier logic and UI.
 ## Installation
 
 To be added
+
+## Resource
+
+1. [startbootstrap-sb-admin-2](https://github.com/startbootstrap/startbootstrap-sb-admin-2) for UI
