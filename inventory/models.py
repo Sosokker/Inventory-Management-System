@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.apps import apps
 
 class Warehouse(models.Model):
     """
@@ -58,11 +58,25 @@ class Inventory(models.Model):
     class Meta:
         verbose_name_plural = 'Inventories'
 
+class Category(models.Model):
+    """
+    Catergory of the item
+
+    :param name: Name of the catergory
+    """
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f"{self.name}"
+
+    class Meta:
+        verbose_name_plural = 'Categories'
 
 class Item(models.Model):
     """
     Item such as food, drink, furnoture etc.
 
+    :param previous_inventory: Previous inventory that the item belongs to, If null, it means the item is new or never move
     :param inventory: Inventory that the item belongs to
     :param name: Name of the item
     :param description: Description of the item
@@ -71,11 +85,38 @@ class Item(models.Model):
     :param quantity: Quantity of the item
     """
     inventory = models.ForeignKey(Inventory, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.DO_NOTHING, null=True)
     name = models.CharField(max_length=255)
-    description = models.TextField()
-    category = models.CharField(max_length=255)
+    description = models.TextField(null=True)
     weight = models.DecimalField(max_digits=10, decimal_places=3)
     quantity = models.IntegerField()
+
+    __previous_inventory = None
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        try:
+            self.__previous_inventory = self.inventory
+        except:
+            self.__previous_inventory = None
+
+    def save(self, force_insert=False, force_update=False, *args, **kwargs):
+        if self.__previous_inventory == None:
+            super().save(force_insert, force_update, *args, **kwargs)
+            Inventory.objects.filter(id=self.inventory.id).update(current_stock=self.inventory.current_stock + self.quantity)
+            return
+
+        if self.inventory != self.__previous_inventory:
+            Inventory.objects.filter(id=self.__previous_inventory.id).update(current_stock=self.__previous_inventory.current_stock - self.quantity)
+            Inventory.objects.filter(id=self.inventory.id).update(current_stock=self.inventory.current_stock + self.quantity)
+            apps.get_model('transaction', 'Transfer').objects.create(
+                from_warehouse=self.__previous_inventory.warehouse,
+                to_warehouse=self.inventory.warehouse,
+                item=self,
+                quantity=self.quantity,
+            )
+        super().save(force_insert, force_update, *args, **kwargs)
+        self.__previous_inventory = self.inventory
 
     def __str__(self):
         return f"{self.name} - {self.quantity}"

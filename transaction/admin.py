@@ -20,4 +20,4 @@ class OrderAdmin(admin.ModelAdmin):
 
 @admin.register(Transfer)
 class TransferAdmin(admin.ModelAdmin):
-    list_display = ('from_warehouse', 'to_warehouse', 'item', 'from_date_timestamp', 'to_date_timestamp', 'quantity')
+    list_display = ('from_warehouse', 'to_warehouse', 'item', 'update_time', 'quantity')

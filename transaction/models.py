@@ -87,8 +87,7 @@ class Transfer(models.Model):
     to_warehouse = models.ForeignKey(Warehouse, related_name='transfer_to', on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     quantity = models.IntegerField()
-    from_date_timestamp = models.DateTimeField()
-    to_date_timestamp = models.DateTimeField()
+    update_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"{self.from_warehouse.name} - {self.to_warehouse.name} - {self.item.name} - {self.quantity}"
