@@ -13,6 +13,8 @@ class Warehouse(models.Model):
     address = models.TextField()
     have_freeze = models.BooleanField()
 
+    def __str__(self):
+        return f"{self.name}"
 
 class Inventory(models.Model):
     """
@@ -27,6 +29,13 @@ class Inventory(models.Model):
     max_stock = models.IntegerField()
     min_stock = models.IntegerField()
     current_stock = models.IntegerField()
+
+    @property
+    def stock_percentage(self):
+        return self.current_stock / self.max_stock * 100
+
+    def __str__(self):
+        return f"{self.warehouse.name} - {self.stock_percentage}%"
 
     class Meta:
         verbose_name_plural = 'Inventories'
@@ -49,3 +58,6 @@ class Item(models.Model):
     category = models.CharField(max_length=255)
     weight = models.DecimalField(max_digits=10, decimal_places=3)
     quantity = models.IntegerField()
+
+    def __str__(self):
+        return f"{self.name} - {self.quantity}"

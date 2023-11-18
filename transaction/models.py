@@ -12,6 +12,8 @@ class Supplier(models.Model):
     name = models.CharField(max_length=255)
     address = models.TextField()
 
+    def __str__(self):
+        return f"{self.name} - {self.address}"
 
 class Supply(models.Model):
     """
@@ -27,6 +29,9 @@ class Supply(models.Model):
     quantity = models.IntegerField()
     arrive_date = models.DateField()
 
+    def __str__(self):
+        return f"{self.supplier.name} - {self.item.name} - {self.quantity}"
+
     class Meta:
         verbose_name_plural = 'Supplies'
 
@@ -41,6 +46,8 @@ class Customer(models.Model):
     name = models.CharField(max_length=255)
     address = models.TextField()
 
+    def __str__(self):
+        return f"{self.name} - {self.address}"
 
 class Order(models.Model):
     """
@@ -56,6 +63,8 @@ class Order(models.Model):
     order_date = models.DateField()
     quantity = models.IntegerField()
 
+    def __str__(self):
+        return f"{self.customer.name} - {self.item.name} - {self.quantity}"
 
 class Transfer(models.Model):
     """
@@ -74,3 +83,6 @@ class Transfer(models.Model):
     quantity = models.IntegerField()
     from_date_timestamp = models.DateTimeField()
     to_date_timestamp = models.DateTimeField()
+
+    def __str__(self):
+        return f"{self.from_warehouse.name} - {self.to_warehouse.name} - {self.item.name} - {self.quantity}"
