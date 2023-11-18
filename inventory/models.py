@@ -28,6 +28,9 @@ class Inventory(models.Model):
     min_stock = models.IntegerField()
     current_stock = models.IntegerField()
 
+    class Meta:
+        verbose_name_plural = 'Inventories'
+
 
 class Item(models.Model):
     """
