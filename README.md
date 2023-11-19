@@ -122,9 +122,10 @@ Generate` Secret key` from  [Djecrety](https://djecrety.ir/)
 
 **Don't forget to change `your_secret_key` to your secret key (without quote)**
 
-2. Migrate database then runserver
+2. Migrate database, load fixture, and then runserver
 ```bash
 python manage.py migrate
+python manage.py loaddata fixtures/data.json
 python manage.py runserver
 ```
 
@@ -135,6 +136,28 @@ or you can change port by
 python manage.py runserver <PORT>
 ```
 
+## For Testing
+
+<table>
+<thead>
+  <tr>
+    <th>Username</th>
+    <th>Password</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>sirin</td>
+    <td>helloworld123</td>
+  </tr>
+</tbody>
+</table>
+
+Or you can create new super user by
+
+```bash
+python manage.py createsuperuser
+```
 
 ## Resource
 

@@ -1,0 +1,1680 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-11-18T18:31:31.208Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Bangkok Distribution Center Bangna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-11-18T18:31:56.589Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Bangkok Distribution Center Bangna - 0.0%",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-11-18T18:45:50.042Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Coca-Cola 330ml - 200",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-11-18T18:46:44.160Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Bangkok Distribution Center Bangna - 0.0%",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-11-18T18:46:56.737Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Coca-Cola 330ml - 200",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-11-18T18:53:32.774Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Col. Maj. President Dr.Sirin McLateSubmit - 173 Matulee Rd, Tambon Pak Nam Pho, Amphoe Mueang Nakhon Sawan, Chang Wat Nakhon Sawan 60000",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-11-18T18:54:48.746Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Nakhon Ratchasima Distribution Center",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-11-18T18:55:03.511Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Nakhon Ratchasima Distribution Center - 0.0%",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-11-18T21:10:21.321Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Electronics and Appliances",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-11-18T21:10:36.612Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "Apparel and Fashion Accessories",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-11-18T21:10:47.106Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Home and Kitchen Supplies",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-11-18T21:10:57.946Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "Office and School Supplies",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-11-18T21:11:04.620Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "Food and Beverages",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-11-18T21:11:09.875Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "6",
+    "object_repr": "Health and Beauty Products",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-11-18T21:11:13.663Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "7",
+    "object_repr": "Automotive Parts and Accessories",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-11-18T21:11:17.481Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "8",
+    "object_repr": "Construction and Industrial Supplies",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-11-18T21:27:51.539Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Electronics and Appliances",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-11-18T21:27:57.101Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "Health and Beauty Products",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-11-18T21:28:00.174Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "Office and School Supplies",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-11-18T21:28:06.350Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "4",
+    "object_repr": "Food and Beverages",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-11-18T21:28:20.282Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "5",
+    "object_repr": "Automotive Parts and Accessories",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-11-18T21:28:36.168Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Bangkok Distribution Center Bangna - 0.0%",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-11-18T21:49:32.319Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Coca-Cola 330ml - 200",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-11-18T21:50:05.544Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Coca-Cola 330ml - 200",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-11-18T21:55:05.941Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Nakhon Ratchasima Distribution Center - 5.714285714285714%",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-11-18T21:58:11.916Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Coca-Cola 330ml - 200",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-11-18T21:59:36.488Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Nakhon Ratchasima Distribution Center - 0.0%",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-11-18T21:59:46.087Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Coca-Cola 330ml - 200",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-11-18T22:24:41.482Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Bangkok Distribution Center Bangna - 0.0%",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-11-18T22:24:46.274Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Nakhon Ratchasima Distribution Center - 5.714285714285714%",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-11-18T22:24:54.911Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Coca-Cola 330ml - 200",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-11-18T22:25:13.216Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Nakhon Ratchasima Distribution Center - Bangkok Distribution Center Bangna - Coca-Cola 330ml - 200",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-11-18T22:25:16.744Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Nakhon Ratchasima Distribution Center - Bangkok Distribution Center Bangna - Coca-Cola 330ml - 200",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-11-18T22:33:57.009Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Samsung BESPOKE 2 Doors Top Glam White with Bottom Clean Vanilla - 20",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-11-18T22:34:12.418Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Samsung BESPOKE 2 Doors Top Glam White with Bottom Clean Vanilla - 20",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-11-18T22:34:40.877Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Bangkok Distribution Center Bangna - 11.0%",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-11-18T22:34:44.188Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Nakhon Ratchasima Distribution Center - 0.0%",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Current stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-11-18T22:34:56.792Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Coca-Cola 330ml - 200",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-11-19T06:24:11.368Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Col. Maj. President Dr.Sirin McLateSubmit - Samsung BESPOKE 2 Doors Top Glam White with Bottom Clean Vanilla - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-11-19T08:34:12.231Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Car Battery - 10",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-11-19T08:34:46.128Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Apples - 15",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2023-11-19T08:35:17.129Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Pencils - 20",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-11-19T08:35:49.806Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "Shampoo - 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-11-19T08:36:26.670Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "Laptop window NXEW23 - 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-11-19T08:37:34.730Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Microsoft (Thailand) - CRC Tower All Season 38floor Witthayu Rd, Lumphini, Pathum Wan, Bangkok 10330",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2023-11-19T08:38:02.892Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "CP All Public Company Limited - 313 CP Tower Building, fl. 24, Silom Rd., Silom, Bangrak, Bangkok 10500",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2023-11-19T08:38:25.648Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Microsoft (Thailand) - Laptop window NXEW23 - 120",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-11-19T09:12:48.930Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Pencils - 20",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2023-11-19T09:12:54.615Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Pencils - 20",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2023-11-19T09:13:01.233Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Pencils - 20",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2023-11-19T09:13:05.886Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Pencils - 20",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Inventory\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add item",
+    "content_type": 7,
+    "codename": "add_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change item",
+    "content_type": 7,
+    "codename": "change_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete item",
+    "content_type": 7,
+    "codename": "delete_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view item",
+    "content_type": 7,
+    "codename": "view_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add inventory",
+    "content_type": 8,
+    "codename": "add_inventory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change inventory",
+    "content_type": 8,
+    "codename": "change_inventory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete inventory",
+    "content_type": 8,
+    "codename": "delete_inventory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view inventory",
+    "content_type": 8,
+    "codename": "view_inventory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add warehouse",
+    "content_type": 9,
+    "codename": "add_warehouse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change warehouse",
+    "content_type": 9,
+    "codename": "change_warehouse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete warehouse",
+    "content_type": 9,
+    "codename": "delete_warehouse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view warehouse",
+    "content_type": 9,
+    "codename": "view_warehouse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add customer",
+    "content_type": 10,
+    "codename": "add_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change customer",
+    "content_type": 10,
+    "codename": "change_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete customer",
+    "content_type": 10,
+    "codename": "delete_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view customer",
+    "content_type": 10,
+    "codename": "view_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add supplier",
+    "content_type": 11,
+    "codename": "add_supplier"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change supplier",
+    "content_type": 11,
+    "codename": "change_supplier"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete supplier",
+    "content_type": 11,
+    "codename": "delete_supplier"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view supplier",
+    "content_type": 11,
+    "codename": "view_supplier"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add transfer",
+    "content_type": 12,
+    "codename": "add_transfer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change transfer",
+    "content_type": 12,
+    "codename": "change_transfer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete transfer",
+    "content_type": 12,
+    "codename": "delete_transfer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view transfer",
+    "content_type": 12,
+    "codename": "view_transfer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add supply",
+    "content_type": 13,
+    "codename": "add_supply"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change supply",
+    "content_type": 13,
+    "codename": "change_supply"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete supply",
+    "content_type": 13,
+    "codename": "delete_supply"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view supply",
+    "content_type": 13,
+    "codename": "view_supply"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add order",
+    "content_type": 14,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change order",
+    "content_type": 14,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete order",
+    "content_type": 14,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view order",
+    "content_type": 14,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add catergory",
+    "content_type": 15,
+    "codename": "add_catergory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change catergory",
+    "content_type": 15,
+    "codename": "change_catergory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete catergory",
+    "content_type": 15,
+    "codename": "delete_catergory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view catergory",
+    "content_type": 15,
+    "codename": "view_catergory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 16,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 16,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 16,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 16,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$SDOpBZ2wMoWlqYDVrrQmou$HcalZyyqKwWrQfLmGsfykHcQv++7cK1QJUeRYA1bCrs=",
+    "last_login": "2023-11-19T06:37:11.495Z",
+    "is_superuser": true,
+    "username": "sirin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-11-18T10:22:11.962Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "inventory",
+    "model": "item"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "inventory",
+    "model": "inventory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "inventory",
+    "model": "warehouse"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "transaction",
+    "model": "customer"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "transaction",
+    "model": "supplier"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "transaction",
+    "model": "transfer"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "transaction",
+    "model": "supply"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "transaction",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "inventory",
+    "model": "catergory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "inventory",
+    "model": "category"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b217vt2u4vsou75j3l0kw8tqtzpd3tn5",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFABxhcuvcbyPCSqoGktCvjv2uTLnR7zzn3xTxta_XbyIufEzszyU6_W6D4yG0H6U7t1nnsbV3mwHeFH3Twa0_5eTncv4NKo35rbV1EXZDQOBQwOYVkZXFSJYJSVChCGJIhgpHBgA6oyQJFnFQykBN7fwDHrzeA:1r4ITD:ePCbKYXl0PCa09N-nxZgTSCXl70fKUfclFmoqRAtG6E",
+    "expire_date": "2023-12-02T10:22:35.118Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ci3y9mxumdw6a5m2os83kx622msok78y",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFABxhcuvcbyPCSqoGktCvjv2uTLnR7zzn3xTxta_XbyIufEzszyU6_W6D4yG0H6U7t1nnsbV3mwHeFH3Twa0_5eTncv4NKo35rbV1EXZDQOBQwOYVkZXFSJYJSVChCGJIhgpHBgA6oyQJFnFQykBN7fwDHrzeA:1r4bQd:uB8DryU2CXzB5Ow2-rhZLXKyfqdFVd25FdhMqf-CLMY",
+    "expire_date": "2023-12-03T06:37:11.495Z"
+  }
+},
+{
+  "model": "inventory.warehouse",
+  "pk": 1,
+  "fields": {
+    "name": "Bangkok Distribution Center Bangna",
+    "address": "587, 589 Debaratana Road, Bang Na Nuea",
+    "have_freeze": true
+  }
+},
+{
+  "model": "inventory.warehouse",
+  "pk": 2,
+  "fields": {
+    "name": "Nakhon Ratchasima Distribution Center",
+    "address": "Chaloem Phra Kiat District, Nakhon Ratchasima 30230",
+    "have_freeze": false
+  }
+},
+{
+  "model": "inventory.inventory",
+  "pk": 1,
+  "fields": {
+    "warehouse": 1,
+    "max_stock": 1000,
+    "min_stock": 0,
+    "current_stock": 27
+  }
+},
+{
+  "model": "inventory.inventory",
+  "pk": 2,
+  "fields": {
+    "warehouse": 1,
+    "max_stock": 2000,
+    "min_stock": 0,
+    "current_stock": 35
+  }
+},
+{
+  "model": "inventory.inventory",
+  "pk": 3,
+  "fields": {
+    "warehouse": 2,
+    "max_stock": 3500,
+    "min_stock": 0,
+    "current_stock": 220
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 1,
+  "fields": {
+    "name": "Electronics and Appliances"
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 2,
+  "fields": {
+    "name": "Health and Beauty Products"
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 3,
+  "fields": {
+    "name": "Office and School Supplies"
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 4,
+  "fields": {
+    "name": "Food and Beverages"
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 5,
+  "fields": {
+    "name": "Automotive Parts and Accessories"
+  }
+},
+{
+  "model": "inventory.item",
+  "pk": 11,
+  "fields": {
+    "inventory": 3,
+    "category": 4,
+    "name": "Coca-Cola 330ml",
+    "description": "Coca-Cola, or Coke, is a carbonated soft drink manufactured by the Coca-Cola Company. In 2013, Coke products were sold in over 200 countries worldwide, with consumers drinking more than 1.8 billion company beverage servings each day",
+    "weight": "0.343",
+    "quantity": 200
+  }
+},
+{
+  "model": "inventory.item",
+  "pk": 12,
+  "fields": {
+    "inventory": 2,
+    "category": 1,
+    "name": "Samsung BESPOKE 2 Doors Top Glam White with Bottom Clean Vanilla",
+    "description": "Bespoke - Customizable Module/Combination",
+    "weight": "15.000",
+    "quantity": 20
+  }
+},
+{
+  "model": "inventory.item",
+  "pk": 13,
+  "fields": {
+    "inventory": 1,
+    "category": 5,
+    "name": "Car Battery",
+    "description": "A 12-volt car battery",
+    "weight": "2.000",
+    "quantity": 10
+  }
+},
+{
+  "model": "inventory.item",
+  "pk": 14,
+  "fields": {
+    "inventory": 2,
+    "category": 4,
+    "name": "Apples",
+    "description": "A bag of red apples",
+    "weight": "2.500",
+    "quantity": 15
+  }
+},
+{
+  "model": "inventory.item",
+  "pk": 15,
+  "fields": {
+    "inventory": 3,
+    "category": 3,
+    "name": "Pencils",
+    "description": "A pack of 10 pencils",
+    "weight": "0.100",
+    "quantity": 20
+  }
+},
+{
+  "model": "inventory.item",
+  "pk": 16,
+  "fields": {
+    "inventory": 1,
+    "category": 2,
+    "name": "Shampoo",
+    "description": "A bottle of shampoo",
+    "weight": "0.500",
+    "quantity": 12
+  }
+},
+{
+  "model": "inventory.item",
+  "pk": 17,
+  "fields": {
+    "inventory": 1,
+    "category": 1,
+    "name": "Laptop window NXEW23",
+    "description": "A 15-inch laptop, brand new from Window",
+    "weight": "3.000",
+    "quantity": 5
+  }
+},
+{
+  "model": "transaction.supplier",
+  "pk": 1,
+  "fields": {
+    "name": "Microsoft (Thailand)",
+    "address": "CRC Tower All Season 38floor Witthayu Rd, Lumphini, Pathum Wan, Bangkok 10330"
+  }
+},
+{
+  "model": "transaction.supplier",
+  "pk": 2,
+  "fields": {
+    "name": "CP All Public Company Limited",
+    "address": "313 CP Tower Building, fl. 24, Silom Rd., Silom, Bangrak, Bangkok 10500"
+  }
+},
+{
+  "model": "transaction.supply",
+  "pk": 1,
+  "fields": {
+    "supplier": 1,
+    "item": 17,
+    "quantity": 120,
+    "arrive_date": "2023-11-22T08:38:21Z"
+  }
+},
+{
+  "model": "transaction.customer",
+  "pk": 1,
+  "fields": {
+    "name": "Col. Maj. President Dr.Sirin McLateSubmit",
+    "address": "173 Matulee Rd, Tambon Pak Nam Pho, Amphoe Mueang Nakhon Sawan, Chang Wat Nakhon Sawan 60000"
+  }
+},
+{
+  "model": "transaction.order",
+  "pk": 1,
+  "fields": {
+    "customer": 1,
+    "item": 12,
+    "order_date": "2023-11-19T06:24:09Z",
+    "quantity": 2
+  }
+},
+{
+  "model": "transaction.transfer",
+  "pk": 9,
+  "fields": {
+    "from_warehouse": 1,
+    "to_warehouse": 1,
+    "item": 12,
+    "quantity": 20,
+    "update_time": "2023-11-18T22:34:12.418Z"
+  }
+},
+{
+  "model": "transaction.transfer",
+  "pk": 10,
+  "fields": {
+    "from_warehouse": 1,
+    "to_warehouse": 2,
+    "item": 11,
+    "quantity": 200,
+    "update_time": "2023-11-18T22:34:56.792Z"
+  }
+},
+{
+  "model": "transaction.transfer",
+  "pk": 11,
+  "fields": {
+    "from_warehouse": 2,
+    "to_warehouse": 1,
+    "item": 15,
+    "quantity": 20,
+    "update_time": "2023-11-19T09:12:48.927Z"
+  }
+},
+{
+  "model": "transaction.transfer",
+  "pk": 12,
+  "fields": {
+    "from_warehouse": 1,
+    "to_warehouse": 2,
+    "item": 15,
+    "quantity": 20,
+    "update_time": "2023-11-19T09:12:54.612Z"
+  }
+},
+{
+  "model": "transaction.transfer",
+  "pk": 13,
+  "fields": {
+    "from_warehouse": 2,
+    "to_warehouse": 1,
+    "item": 15,
+    "quantity": 20,
+    "update_time": "2023-11-19T09:13:01.230Z"
+  }
+},
+{
+  "model": "transaction.transfer",
+  "pk": 14,
+  "fields": {
+    "from_warehouse": 1,
+    "to_warehouse": 2,
+    "item": 15,
+    "quantity": 20,
+    "update_time": "2023-11-19T09:13:05.882Z"
+  }
+}
+]
