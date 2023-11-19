@@ -29,19 +29,15 @@
                                 <h6 class="m-0 font-weight-bold text-primary">Filter</h6>
                             </a>
                             <!-- Card Content - Collapse -->
-                            <form method="get">
-                                <div class="row g-3 align-items-center mx-2 my-4">
-                                        {{ filter.form.as_p }}
-                                    <div class="col-auto">
-                                        <button type="submit" class="btn btn-primary">Filter</button>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href={{ request.path }} class="btn btn-danger">
-                                            <i class="fas fa-trash"></i> Clear Filter
-                                        </a>
-                                    </div>
-                                </div>
-                            </form>
+                            <form method="get" class="p-4">
+                                {{ filter.form.as_p }}
+                                <label for="{{ filter.form.ordering.id_for_label }}">Sort by:</label>
+                                {{ filter.form.ordering }}
+                                <input type="submit" value="Apply">
+                                <a href={{ request.path }} class="btn btn-danger">
+                                    <i class="fas fa-trash"></i> Clear Filter
+                                </a>
+                              </form>
                         </div>
                         
                         

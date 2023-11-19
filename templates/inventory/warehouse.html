@@ -46,7 +46,7 @@
                                         <button type="submit" class="btn btn-primary">Filter</button>
                                     </div>
                                     <div class="col-auto">
-                                        <a href="{% url 'warehouse' %}" class="btn btn-danger">
+                                        <a href={{ request.path }} class="btn btn-danger">
                                             <i class="fas fa-trash"></i> Clear Filter
                                         </a>
                                     </div>
