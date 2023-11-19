@@ -1,4 +1,4 @@
-import datetime
+from django.utils import timezone
 
 from django.db import models
 
@@ -32,8 +32,8 @@ class Supply(models.Model):
     arrive_date = models.DateTimeField()
 
     def pending_status(self) -> bool:
-        now = datetime.datetime.now()
-        return self.arrive_date > now.date() 
+        now = timezone.now()
+        return self.arrive_date > now
 
     def __str__(self):
         return f"{self.supplier.name} - {self.item.name} - {self.quantity}"

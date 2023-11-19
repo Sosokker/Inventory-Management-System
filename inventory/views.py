@@ -7,8 +7,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 
 from inventory.models import Warehouse, Inventory, Item
+from transaction.models import Customer, Transfer, Order
 from inventory.utils import stock_percentage_all, count_pending_supply
-from transaction.models import Customer
+
 
 @login_required
 def Over(request):
@@ -24,6 +25,11 @@ class OverviewView(TemplateView, LoginRequiredMixin):
         context['customer_count'] = Customer.objects.count()
         context['stock_percentage'] = stock_percentage_all()
         context['pending_supply'] = count_pending_supply()
+        context['inventory_list'] = Inventory.objects.all()
+        context['inventory_count'] = Inventory.objects.count()
+        context['item_count'] = Item.objects.count()
+        context['order_count'] = Order.objects.count()
+        context['transfer_count'] = Transfer.objects.count()
         return context
     
 
