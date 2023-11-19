@@ -1,6 +1,6 @@
 from django import forms
 import django_filters
-from transaction.models import Order
+from transaction.models import Order, Transfer
 
 class OrderFilter(django_filters.FilterSet):
     customer_name = django_filters.CharFilter(field_name='customer__name', lookup_expr='icontains', label='Customer Name')
@@ -10,3 +10,13 @@ class OrderFilter(django_filters.FilterSet):
     class Meta:
         model = Order
         fields = ['customer_name', 'item_name', 'order_date']
+
+
+class TransferFilter(django_filters.FilterSet):
+    from_warehouse = django_filters.CharFilter(field_name='from_warehouse__name', lookup_expr='icontains', label='From Warehouse')
+    to_warehouse = django_filters.CharFilter(field_name='to_warehouse__name', lookup_expr='icontains', label='To Warehouse')
+    item_name = django_filters.CharFilter(field_name='item__name', lookup_expr='icontains', label='Item Name')
+
+    class Meta:
+        model = Transfer
+        fields = ['from_warehouse', 'to_warehouse', 'item_name']
