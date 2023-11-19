@@ -1,6 +1,6 @@
 from django import forms
 import django_filters
-from transaction.models import Order, Transfer
+from transaction.models import Order, Transfer, Supply
 
 class OrderFilter(django_filters.FilterSet):
     customer_name = django_filters.CharFilter(field_name='customer__name', lookup_expr='icontains', label='Customer Name')
@@ -20,3 +20,12 @@ class TransferFilter(django_filters.FilterSet):
     class Meta:
         model = Transfer
         fields = ['from_warehouse', 'to_warehouse', 'item_name']
+
+
+class SupplyFilter(django_filters.FilterSet):
+    supplier_name = django_filters.CharFilter(field_name='supplier__name', lookup_expr='icontains', label='Supplier Name')
+    item_name = django_filters.CharFilter(field_name='item__name', lookup_expr='icontains', label='Item Name')
+
+    class Meta:
+        model = Supply
+        fields = ['supplier_name', 'item_name']
