@@ -20,6 +20,8 @@ Here are the overview of steps to install and run this project.
 3. Create virutal environment then install requirements
 4. Migrate database, load fixture, and run server
 
+---
+
 ### Install Python and PostgreSQL
 
 #### Install python
@@ -68,6 +70,10 @@ After install `postgres` and `pgadmin4` you must
 2. Specify username, password and host as you desired.
 
 Usually Host name will be `localhost` , port will be `5432`, and default postgres database user is `postgres`
+
+---
+
+### Setup Environment and Django
 
 #### Clone this repository and Create virtual environment with `venv` or `virtualenv`.
 
